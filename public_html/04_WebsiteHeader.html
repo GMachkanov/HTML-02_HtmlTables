@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Header</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                padding: 0;
+                margin:0;
+            }
+            table{
+                background: #234465;
+                color: white;
+                font-size: 10px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            td{
+                padding-left: 10px;
+                text-align: right;
+            }
+            .search{
+                height:22px;
+                position: relative;
+                top: 5px;
+                left:-2px;
+                border-radius: 0 7px 7px 0 ;
+                border-left: 1px solid #e8e8e8;
+            }
+            .searchin{
+                height: 18px;
+                border-radius: 7px 0 0 7px;
+                position: relative;
+                top: -1px;
+                border:1px solid white;
+            }
+
+            a{
+                text-decoration:none;
+                color: white;
+            }
+            ul.nav{
+                display:inline;
+                text-decoration: none;
+                list-style: none;
+                padding:10px;
+                color:white;
+                background: #234465;
+                border-radius: 5px;
+            }
+
+            ul.nav > li {
+                padding:5px;
+                font-size: 10px;
+                float:left;
+            }
+            .drop, .drop2{
+                display: none;
+            }
+            
+            li.dropdown:hover ul.drop{
+                display: block;
+                position: absolute; 
+                top: 65px;
+                left:220px;
+                text-decoration: none;
+                list-style: none;
+                padding:10px;
+                color:white;
+                background: #234465;
+                border-radius: 5px;
+            }
+            
+            li.dropdown:hover ul.drop li{
+                padding:5px;
+                border-radius: 5px;
+            }
+            
+            li.dropdown:hover ul.drop2{
+                display: block;
+                position: absolute; 
+                top: 65px;
+                left:357px;
+                text-decoration: none;
+                list-style: none;
+                padding:10px;
+                color:white;
+                background: #234465;
+                border-radius: 5px;
+            }
+            
+            li.dropdown:hover ul.drop2 li{
+                padding:5px;
+                border-radius: 5px;
+            }
+            
+            li.dropdown:after{
+                display: block;
+                background: url ('drop.png');
+            }
+            .dropimg{
+                margin-left:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td rowspan="2"><a href="https://softuni.bg"><img src="softunilogo.png"/></a></td>
+                <td colspan="3" style="text-align: right;"><img src="notification.png"></td>
+                <td colspan="3">USER <input class="searchin" type="text"/><img class="search" src="search.png"/></td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <ul class="nav">
+                        <li><a href="https://softuni.bg">NEWS</a></li>
+                        <li class="dropdown">ABOUT THE UNIVERSITY<img class="dropimg" src="drop.png"/>
+                            <ul class="drop">
+                                <li><a href="https://softuni.bg">ABOUT THE UNIVERSITY</a></li>
+                                <li><a href="https://softuni.bg">ABOUT THE UNIVERSITY</a></li>
+                                <li><a href="https://softuni.bg">ABOUT THE UNIVERSITY</a></li>
+                                <li><a href="https://softuni.bg">ABOUT THE UNIVERSITY</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">TRAINING COURSES<img class="dropimg" src="drop.png"/>
+                        <ul class="drop2">
+                                <li><a href="https://softuni.bg">TRAINING COURSES</a></li>
+                                <li><a href="https://softuni.bg">TRAINING COURSES</a></li>
+                                <li><a href="https://softuni.bg">TRAINING COURSES</a></li>
+                                <li><a href="https://softuni.bg">TRAINING COURSES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://softuni.bg">FOR COMPANIES</a></li>
+                        <li><a href="https://softuni.bg">FORUM</a></li>
+                        <li><a href="https://softuni.bg">CONTACTS</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </body>
+</html>

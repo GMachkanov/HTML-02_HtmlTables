@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SoftUni Keyboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                color: #0000EE;
+                font-weight: bold;
+            }
+            td{
+                height: 100px;
+                width:100px;
+                background: red;
+/*                border: 3px solid white;*/
+                text-align: center;
+                border-radius: 5px;
+            }
+            
+            .nested td{
+                height: 50px;
+                width:100px;
+                border-radius: 5px;
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <table border="1px solid black" cellspacing="1px">
+            <tr>
+                <td colspan="4">
+                    <h1>SOFTWARE UNIVERSITY</h1>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2"><div>Google</div></td>
+                <td  colspan="2">GitHub</td>
+            </tr>
+            <tr>
+                <td>FB</td>
+                <td>GMail</td>
+                <td>YouTube</td>
+                <td> 2048</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td  colspan="2"> Game</td>
+                <td  colspan="2">
+                    <table border="1" class="nested">
+                        <tr>
+                            <td>Social Life</td>
+                        </tr>
+                        <tr>
+                            <td>Sleep</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">Beer &#62;</td>
+                <td colspan="2">WC</td>
+            </tr>
+        </table>
+    </body>
+</html>
